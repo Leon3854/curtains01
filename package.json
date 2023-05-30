@@ -5,13 +5,17 @@
 	"main": "index.js",
 	"author": "WebDesign Master",
 	"type": "module",
-	"browserslist": [ "last 10 versions" ],
+	"browserslist": [
+		"last 10 versions"
+	],
 	"license": "ISC",
-	"scripts": { "start": "gulp" },
+	"scripts": {
+		"start": "gulp"
+	},
 	"devDependencies": {
 		"@babel/core": "^7.19.6",
 		"@babel/preset-env": "^7.19.4",
-		"autoprefixer": "^10.4.13",
+		"autoprefixer": "^10.4.14",
 		"babel-loader": "^9.0.1",
 		"babel-plugin-module-resolver": "^4.1.0",
 		"babel-plugin-root-import": "^6.6.0",
@@ -37,5 +41,8 @@
 		"terser-webpack-plugin": "^5.3.6",
 		"webpack": "^5.74.0",
 		"webpack-stream": "^7.0.0"
+	},
+	"dependencies": {
+		"sass-autoprefixer": "^1.0.1"
 	}
 }

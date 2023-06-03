@@ -1,0 +1,52 @@
+.oremanufacture
+	margin-top: 70px
+	
+.oremanufacture_main-title
+	& h2
+		font-family: $userfont
+		font-style: normal
+		font-weight: 700
+		font-size: 20px
+		line-height: 28px
+		color: $textcolor
+
+.oremanufacture_content
+	margin-top: 20px
+	& p
+		font-family: $userfont
+		font-style: normal
+		font-weight: 400
+		font-size: 16px
+		line-height: 20px
+		color: $textcolor
+
+.oremanufacture_link
+	margin-top: 20px
+	& a
+		font-family: $userfont
+		font-style: normal
+		font-weight: 400
+		font-size: 14px
+		line-height: 20px
+		display: flex
+		align-items: center
+		color: #38BE76
+		text-decoration: none
+		position: relative
+		display: inline-block
+		padding-bottom: 3px
+		&::after
+			position: absolute
+			content: ''
+			left: 0
+			bottom: 0
+			width: 100%
+			height: 100%
+			border-bottom: 1px dashed #38BE76
+
+@media (max-width: 769px)
+	.oremanufacture
+		display: none
+	
+
+

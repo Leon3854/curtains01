@@ -1,0 +1,194 @@
+.footer-inform-line
+	background-color: #2C2529
+.inform-white-block
+	background-color: #FFF
+	width: 100%
+	height: 40px
+	border-radius: 0 0 40px 40px
+
+.inform-navbar-block
+	padding: 45px 32px
+	display: flex
+	justify-content: space-between
+
+.inform-navbar-list
+	width: 20%
+	position: relative
+	padding: 0
+	margin: 0
+
+.footer-information-main-title
+	& h2
+		font-family: $userfont
+		font-style: normal
+		font-weight: 700
+		font-size: 18px
+		line-height: 24px
+		color: #F7F7F9
+
+.footer-information-list
+	margin-top: 8px
+	padding: 0
+	margin: 0
+	& ul
+		& li
+			margin-top: 8px
+			& a
+				font-family: $userfont
+				font-style: normal
+				font-weight: 400
+				font-size: 18px
+				line-height: 24px
+				color: #A3A3A3
+				&:hover
+					color: #A3A3A3
+
+.footer-nuber-soc
+	& ul
+		& li
+			margin-top: 8px
+			&:first-child
+				margin-top: 0
+.oure-number
+	font-family: $userfont
+	font-style: normal
+	font-weight: 700
+	font-size: 18px
+	line-height: 24px
+	/* identical to box height, or 133% */
+	color: #F7F7F9
+	&:hover
+		color: #F7F7F9
+
+.oure-mail
+	font-family: $userfont
+	font-style: normal
+	font-weight: 400
+	font-size: 18px
+	line-height: 24px
+	/* identical to box height, or 133% */
+	color: #F7F7F9
+	&:hover
+		color: #F7F7F9
+
+.soc-group
+	margin-top: 8px
+	span:last-child
+		margin-left: 8px
+
+.footer-fool-adres
+	margin-top: 36px
+	& p
+		font-family: $userfont
+		font-style: normal
+		font-weight: 400
+		font-size: 18px
+		line-height: 32px
+		color: #A3A3A3
+
+.information-copyright-block
+	display: flex
+	align-items: center
+	justify-content: center
+	background: #262123
+	width: 100%
+	height: 84px
+	margin: 0
+	padding: 0
+.desctop-copyright
+	margin: 0
+	padding: 0
+	font-family: $userfont
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	color: #A3A3A3
+.mobile-copyright
+	display: none
+	margin: 0
+	padding: 0
+	font-family: $userfont
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	color: #A3A3A3
+
+
+
+@media (max-width: 769px)
+	.inform-navbar-block
+		padding: 20px
+	.information-copyright-block
+		height: auto
+		padding: 20px 0
+	.mobile-copyright
+		display: block
+	.desctop-copyright
+		display: none
+
+	.footer-information-main-title
+		& h2
+			font-size: 16px	
+	.footer-information-list 
+		& ul
+			& li
+				margin-top: 8px
+				& a
+					font-size: 14px
+	.oure-number
+		font-size: 14px
+	.oure-mail
+		font-size: 14px
+	.footer-fool-adres
+		& p
+			font-size: 14px
+
+
+@media (max-width: 660px)
+
+	.inform-white-block
+		border-radius: 0
+	.inform-navbar-block
+		transition: all ease .5s
+	
+	.inform-navbar-list
+		border-bottom: 2px solid #A3A3A3
+		margin-top: 10px
+		padding-bottom: 10px
+		&:first-child
+			margin-top: 0
+	.inform-navbar-list
+		width: 100%
+		transition: all ease .5s
+	
+	.footer-information-main-title
+		position: relative
+		& img
+			transition: all ease 0.5s
+			position: absolute
+			right: 1%
+			top: 35%
+			transform: rotate(180deg)
+	.footer-information-main-title.active
+		& img
+			transform: rotate(0deg)
+
+	.inform-navbar-block
+		flex-direction: column
+	
+	.footer-information-list 
+		padding: 0
+		transition: all ease .5s
+		overflow: hidden
+		opacity: 0
+		height: 0
+		top: 0
+		visibility: hidden
+
+	.footer-information-list.active
+		visibility: visible
+		height: 100%
+		left: 0
+		opacity: 1
+
+

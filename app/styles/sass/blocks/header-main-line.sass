@@ -13,6 +13,7 @@
 	position: relative
 	border: 1px solid #C3C3B9
 	border-radius: 4px
+	min-width: 112px
 	width: 112px
 	height: 44px
 	display: flex
@@ -24,6 +25,8 @@
 
 .header-logotip
 	margin-left: 33px
+.image-logotip
+	min-width: 211px
 .logotip-mobile
 	display: none
 
@@ -83,7 +86,6 @@
 		
 .navbar-item a
 	display: flex
-	// flex-direction: column
 	flex-flow: column wrap
 	justify-content: center
 	align-items: center
@@ -204,6 +206,7 @@
 		display: none
 	.header-main-line_call-location-btn
 		width: 200px
+		min-width: 200px
 		display: block
 	.location-btn-link
 		height: 100%
@@ -217,10 +220,17 @@
 
 	.form-search
 		display: none
+
+	// .header-menu-button
+		// padding: 0 30px
+
 @media (max-width: 647px)
 	.header-search
-		border: 1px solid green
 		display: none
+
+	.header-main-line_call-location-btn
+		width: 100px
+		min-width: 100px
 
 @media (max-width: 512px)
 	.logotip
@@ -230,9 +240,17 @@
 		width: 180px
 		display: flex
 		justify-content: center
+	.header-menu-button
+		min-width: 56px
+		& span
+			display: none
 @media (max-width: 427px)
 	.logotip-mobile
 		width: 100px
+	.header-menu-button
+		min-width: 56px
+		& span
+			display: none
 @media (max-width: 322px)
 	.header-logotip
 		margin-left: 20px
@@ -240,3 +258,7 @@
 		width: 60px
 	.header-navbar
 		margin-left: 20px
+	.header-menu-button
+		min-width: 56px
+		& span
+			display: none

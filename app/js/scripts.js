@@ -24,4 +24,53 @@ document.addEventListener("DOMContentLoaded", () => {
       title.classList.toggle("active");
     });
   });
+
+  $(".main-slider_carousel-block").slick({
+    dots: true,
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    arrows: true,
+    prevArrow:
+      '<button type="button" class="main-slider_carousel-block slick-prev"><img src="../images/src/icons/arrow-prev.svg" alt="arrow-prev" /></button>',
+    nextArrow:
+      '<button type="button" class="main-slider_carousel-block slick-next"><img src="../images/src/icons/arrow-circle.svg" alt="arrow-next" /></button>',
+    responsive: [
+      {
+        breakpoint: 526,
+        settings: {
+          dots: false,
+          arrows: false,
+          autopplay: true,
+        },
+      },
+      {
+        breakpoint: 426,
+        settings: {
+          dots: false,
+          arrows: false,
+          autopplay: true,
+        },
+      },
+      {
+        breakpoint: 376,
+        settings: {
+          dots: false,
+          arrows: false,
+          autopplay: true,
+        },
+      },
+      {
+        breakpoint: 321,
+        settings: {
+          dots: false,
+          arrows: false,
+          autopplay: true,
+        },
+      },
+    ],
+  });
 });

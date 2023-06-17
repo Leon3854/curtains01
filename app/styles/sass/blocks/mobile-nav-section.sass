@@ -1,0 +1,47 @@
+.mobile-nav
+	display: none
+
+@media (max-width: 1140px)
+	.mobile-nav
+		display: block
+		height: 72px
+		width: 100%
+		position: absolute
+		z-index: 200
+		background: #fff
+		box-shadow: 0 -8 12 rgba(24, 39, 75, 0.4)
+		// top: var(--elem-top)
+		position: fixed
+		bottom: 0
+	.mobile-nav.fixed
+		position: fixed
+	.mobile-nav_list
+		margin: 0
+		padding: 0
+		list-style-type: none
+		display: flex
+		justify-content: space-around
+		align-items: center
+		height: 72px
+		& li
+			display: flex
+			flex-flow: column
+			justify-content: center
+			align-items: center
+			& a
+				display: flex
+				align-items: center
+				justify-content: center
+				flex-direction: column
+				font-size: 14px
+				line-height: 20px
+				& span
+					color: $textcolor
+					text-transform: capitalize
+				& img
+					height: 28px
+					width: 28px
+				& span:hover
+					font-style: bold
+					font-size: 14px
+					line-height: 20px

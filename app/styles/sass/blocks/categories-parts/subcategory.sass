@@ -1,0 +1,36 @@
+.subcategory
+	margin-top: 16px
+
+.subcategory_title h2
+	font-size: 18px
+	font-weight: bold
+	line-height: 24px
+
+.subcategory_nav
+	margin-top: 24px
+	height: 32px
+
+.subcategory_list
+	padding: 0
+	margin: 0
+	display: flex
+	align-items: center
+	justify-content: flex-start
+
+.subcategory_item
+	margin-left: 16px
+	&:first-child
+		margin-left: 0
+
+.subcategory_link
+	border: 1px solid rgba(163, 163, 163, 1)
+	border-radius: 8px
+	font-size: 14px
+	line-height: 20px
+	color: $textcolor
+	padding: 3px 16px
+	transition: all ease .5s
+	&:hover
+		border: 1px solid $accent
+		color: $accent
+		box-shadow: 0px 2px 5px  rgba(0,0,0,.2)

@@ -7,6 +7,10 @@
 	line-height: 24px
 
 .subcategory_nav
+	display: flex
+	align-items: center
+	overflow: hidden
+	width: 100%
 	margin-top: 24px
 	height: 32px
 
@@ -34,3 +38,19 @@
 		border: 1px solid $accent
 		color: $accent
 		box-shadow: 0px 2px 5px  rgba(0,0,0,.2)
+
+
+@media (max-width: 789px)
+	.subcategory_item
+		&:nth-child(4)
+			display: none
+
+@media (max-width: 605px)
+	.subcategory_item
+		&:nth-child(3)
+			display: none
+
+@media (max-width: 436px)
+	.subcategory_item
+		&:nth-child(2)
+			display: none

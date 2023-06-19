@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title.classList.toggle("active");
     });
   });
-
+  // home page slider
   $(".main-slider_carousel-block").slick({
     dots: true,
     infinite: true,
@@ -72,5 +72,15 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       },
     ],
+  });
+  // category slider
+  $(".category-slider_list").slick({
+    dots: true,
+    arrows: false,
+    speed: 2000,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    // autoplay: true,
   });
 });

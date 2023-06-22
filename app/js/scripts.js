@@ -83,4 +83,107 @@ document.addEventListener("DOMContentLoaded", () => {
     adaptiveHeight: true,
     // autoplay: true,
   });
+
+  // recommended goods slider
+  $(".recommended-goods__list").slick({
+    dots: false,
+    arrows: false,
+    speed: 2500,
+    slidesToScroll: 1,
+    centerMode: true,
+    slidesToShow: 5,
+    autoplay: true,
+    infinite: true,
+    centerPadding: "100px",
+    responsive: [
+      {
+        breakpoint: 1050,
+        settings: {
+          slidesToShow: 4,
+          centerPadding: "100px",
+        },
+      },
+      {
+        breakpoint: 940,
+        settings: {
+          slidesToShow: 4,
+          centerPadding: "40px",
+        },
+      },
+      {
+        breakpoint: 822,
+        settings: {
+          slidesToShow: 3,
+          centerPadding: "100px",
+        },
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 3,
+          centerPadding: "80px",
+        },
+      },
+      {
+        breakpoint: 940,
+        settings: {
+          slidesToShow: 4,
+          centerPadding: "40px",
+        },
+      },
+      {
+        breakpoint: 726,
+        settings: {
+          slidesToShow: 3,
+          centerPadding: "60px",
+        },
+      },
+      {
+        breakpoint: 670,
+        settings: {
+          slidesToShow: 3,
+          centerPadding: "10px",
+          // centerMode: fals,
+        },
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: "60px",
+        },
+      },
+      {
+        breakpoint: 515,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: "40px",
+        },
+      },
+      {
+        breakpoint: 462,
+        settings: {
+          slidesToShow: 2,
+          // centerPadding: "20px",
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 376,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "60px",
+          // centerMode: false,
+        },
+      },
+      {
+        breakpoint: 322,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "40px",
+          // centerMode: false,
+        },
+      },
+    ],
+  });
 });

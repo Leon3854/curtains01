@@ -1,0 +1,58 @@
+.banners-catalog
+	margin-top: 60px
+	overflow: hidden
+	position: relative
+
+.banners-catalog__wrapp
+	overflow: hidden
+	position: relative
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	grid-template-rows: repeat(2, 1fr)
+	// justify-content: center
+	justify-items: center
+	gap: 30px
+
+.banners-catalog__item
+	width: 302px
+	height: 225px
+
+.banners-catalog__link
+	border-radius: 20px
+	background-size: cover
+	display: inline-block
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: end
+	align-items: end
+	& span
+		background-color: #fff
+		border-radius: 8px
+		padding: 4px 16px
+		margin-bottom: 20px
+		margin-right: 40px
+		text-transform: uppercase
+		color: #38BE76
+		font-weight: bold
+
+// @media (max-width: )
+@media (max-width: 769px)
+	.banners-catalog__wrapp
+		height: 225px
+		grid-template-columns: repeat(6, 1fr)
+@media (max-width: 426px)
+	.banners-catalog__wrapp
+		grid-template-columns: repeat(6, 1fr)
+		height: 225px
+@media (max-width: 376px)
+	.banners-catalog__wrapp
+		grid-template-columns: repeat(6, 1fr)
+		height: 225px
+@media (max-width: 321px)
+	.banners-catalog__wrapp
+		grid-template-columns: repeat(6, 1fr)
+		justify-items: start
+		height: 225px
+
+

@@ -76,12 +76,42 @@ document.addEventListener("DOMContentLoaded", () => {
   // category slider
   $(".category-slider_list").slick({
     dots: true,
-    arrows: false,
+    arrows: true,
+    prevArrow:
+      '<button type="button" class="main-slider_carousel-block slick-prev"><img src="../images/src/icons/arrow-prev.svg" alt="arrow-prev" /></button>',
+    nextArrow:
+      '<button type="button" class="main-slider_carousel-block slick-next"><img src="../images/src/icons/arrow-circle.svg" alt="arrow-next" /></button>',
     speed: 2000,
     slidesToScroll: 1,
     slidesToShow: 1,
     adaptiveHeight: true,
-    // autoplay: true,
+    autoplay: false,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 861,
+        settings: {
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   });
 
   // recommended goods slider

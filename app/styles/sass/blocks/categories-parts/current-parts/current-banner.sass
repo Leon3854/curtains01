@@ -1,0 +1,108 @@
+.current-banner
+	margin-top: 24px
+
+.current-banner__wrapper
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	// grid-template-rows: repeat(2, 1fr)
+	gap: 12px
+	// justify-items: stretch
+
+.current-banner__item
+	border-radius: 20px
+	width: 280px
+	height: 180px
+	position: relative
+	
+.name-banner__item-left
+	position: absolute
+	bottom: 16px
+	left: 16px
+	border-radius: 40px
+	background-color: #fff
+	display: inline-flex
+	align-items: center
+	padding: 0 16px
+	text-transform: uppercase
+	font-size: 14px
+	font-weight: 700
+	font-family: 'Roboto', sans-serif
+	line-height: 26px
+
+.name-banner__item-right
+	position: absolute
+	bottom: 16px
+	right: 16px
+	border-radius: 40px
+	background-color: #fff
+	display: inline-flex
+	align-items: center
+	padding: 0 16px
+	text-transform: uppercase
+	font-size: 14px
+	font-family: 'Roboto', sans-serif
+	line-height: 26px
+	color: #38BE76
+	font-weight: 700
+
+.sale-befor
+	position: relative
+	margin-top: 4px
+	margin-left: 4px
+	border-radius: 104px
+	width: 104px
+	height: 104px
+	display: flex
+	justify-content: center
+	align-items: center
+	transform: rotate(-15deg)
+	background-color: #F9DD70
+.sale-before__content
+	height: 47px
+	position: relative
+.sale
+	text-align: center
+	font-size: 14px
+	font-family: "Roboto", sans-serif
+	font-weight: 700
+	line-height: 24px
+	letter-spacing: 0.56px
+	text-transform: uppercase
+.before
+	display: inline-block
+	color: #161314
+	font-size: 8px
+	font-family: "Roboto", sans-serif
+	font-weight: 700
+	line-height: 8px
+	letter-spacing: 0.24px
+	text-transform: uppercase
+	position: relative
+	left: 0
+	bottom: 6px
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 1px
+		left: 0
+		top: 10px
+		background-color: #161314
+.procent
+	position: absolute
+	color: #161314
+	text-align: center
+	font-size: 24px
+	font-family: "Roboto", sans-serif
+	font-weight: 700
+	line-height: 24px
+	text-transform: uppercase
+	right: 0
+	bottom: 0px
+
+@media (max-width: 1190px)
+	.current-banner__wrapper
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		grid-template-rows: repeat(2, 1fr)
+		gap: 12px

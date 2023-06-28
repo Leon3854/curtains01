@@ -216,4 +216,21 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     ],
   });
+  //
+  // popular goods
+  $(".slider-slick__list").slick({
+    dots: false,
+    arrows: true,
+    speed: 2500,
+    slidesToScroll: 1,
+    centerMode: true,
+    slidesToShow: 4,
+    autoplay: true,
+    infinite: true,
+    centerPadding: "70px",
+    prevArrow:
+      '<button type="button" class="slider-slick__list slick-prev"><img src="../images/src/icons/arrow-prev.svg" alt="arrow-prev" /></button>',
+    nextArrow:
+      '<button type="button" class="slider-slick__list slick-next"><img src="../images/src/icons/arrow-circle.svg" alt="arrow-next" /></button>',
+  });
 });

@@ -1,0 +1,389 @@
+
+
+.control-filter__box
+	margin-top: 32px
+	transition: all ease 1s
+
+.control-filter__head
+	background-color: #fff
+	display: flex
+	justify-content: space-between
+	align-items: center
+	height: 24px
+
+.control-filter__body
+	height: auto
+	width: 100%
+	overflow: hidden
+	opacity: 1
+	visibility: visible
+
+.control-filter__body.click
+	opacity: 0
+	visibility: hidden
+	height: 0px
+
+.control-filter__reset
+	margin-top: 34px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	width: 100%
+	height: 24px
+
+.left-section
+	display: flex
+	justify-content: flex-start
+	align-items: center
+.select-categorie
+	margin-top: 8px
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	h3
+		color: #161314
+		font-size: 16px
+		font-family: "Roboto", sans-serif
+		font-style: normal
+		font-weight: 700
+		line-height: 22px
+	img
+		width: 10px
+		height: 16px
+		margin-left: 6px
+		margin-top: -8px
+.categorie-reset
+	margin-left: 16px
+	position: relative
+	border: none
+.btn-reset
+	border: none
+	background-color: rgba(255, 255, 255, 0)
+	position: relative
+	color: #A3A3A3
+	font-size: 14px
+	font-family: "Roboto", sans-serif
+	font-style: normal
+	font-weight: 400
+	line-height: 21px
+	&::after
+		content: ''
+		position: absolute
+		left: 8px
+		bottom: 0
+		width: 80%
+		border: 1px dashed #a3a3a3
+
+.icont-arrow-control
+	position: relative
+	width: 24px
+	height: 24px
+.arrow-up-icon
+	transition: all ease .5s
+	position: absolute
+	transform: rotate(180deg)
+	-ms-transform: rotate(180deg)
+	left: 20%
+	top: 25%
+.arrow-up-icon.click
+	position: absolute
+	-ms-transform: rotate(180deg)
+	transform: rotate(0deg)
+	left: 20%
+	top: 25%
+
+.control-filter-search
+	margin-top: 12px
+	width: 100%
+.current-search
+	border: 1px solid #a3a3a3
+	border-radius: 8px
+	padding: 5px 8px
+	width: 100%
+	// height: 36px
+	&::placeholder
+		color: #A3A3A3
+		font-size: 16px
+		font-family: "Roboto", sans-serif
+		font-style: normal
+		font-weight: 400
+		line-height: 36px
+
+.control-filter__body.close
+	height: 0px
+
+.control-filter-checkboxis
+	margin-top: 12px
+
+.box.current-filter
+	margin-top: 12px
+
+input[type="checkbox"]:checked, input[type="checkbox"]:not(:checked) 
+	position: absolute
+	left: -9999px
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label 
+	display: inline-block
+	position: relative
+	padding-left: 40px
+	line-height: 20px
+	cursor: pointer
+	color: #161314
+	font-size: 16px
+	font-family: "Roboto", sans-serif
+	font-style: normal
+	font-weight: 400
+	line-height: 22px
+
+.box input[type="checkbox"]:checked + label::before,
+.box input[type="checkbox"]:not(:checked) + label::before
+	content: ''
+	position: absolute
+	top: 25%
+	transform: translateY(-25%)
+	left: 0
+	width: 21px
+	height: 21px
+	border: 1px solid rgba(163, 163, 163, 1)
+	background-color: #fff
+	border-radius: 3px
+
+.box input[type="checkbox"]:checked + label::after,
+.box input[type="checkbox"]:not(:checked) + label::after 
+	content: ''
+	position: absolute
+	transition: all ease 0.5s
+	left: 4px
+	top: 8px
+	transform: translateX(-8px)
+	width: 12px
+	height: 8px
+	border-radius: 1px
+	border-left: 3px solid #fff
+	border-bottom: 3px solid #fff
+	transform: rotate(-45deg)
+	// background-color: rgba(56, 190, 118, 1)
+
+.box input[type="checkbox"]:not(:checked) + label::after
+	opacity: 0
+
+.box input[type="checkbox"]:checked + label::after 
+	opacity: 1
+.box input[type="checkbox"]:checked + label::before,
+.box input[type="checkbox"]:checked + label::before
+	background-color: rgba(56, 190, 118, 1)
+	opacity: 1
+.box input[type="checkbox"]:checked + label::before,
+.box input[type="checkbox"]:checked + label::before
+	border: none
+
+.current-filter__wrapper
+	margin-top: 12px
+	display: grid
+	grid-template-columns: repeat(5, 1fr)
+	gap: 4px
+	width: 196px
+.current-filter__item
+	width: 36px
+	height: 36px
+	border-radius: 50%
+	&:nth-child(1)
+		// border: 1px solid #fff
+		background-color: rgba(22, 19, 20, 1)
+	&:nth-child(2)
+		// border: 1px solid #fff
+		background-color: rgba(250, 243, 229, 1)
+	&:nth-child(3)
+		// border: 1px solid rgba(191, 174, 205, 1)
+		background-color: rgba(120, 93, 66, 1)
+	&:nth-child(4)
+		background-color: rgba(251, 223, 122, 1)
+	&:nth-child(5)
+		// border: 1px solid rgba(22, 19, 20, .25)
+		background-color: rgba(248, 213, 169, 1)
+	&:nth-child(6)
+		background-color: rgba(204, 77, 76, 1)
+	&:nth-child(7)
+		background-color: rgba(244, 192, 210, 1)
+	&:nth-child(8)
+		background-color: rgba(145, 91, 140, 1)
+	&:nth-child(9)
+		background-color: rgba(157, 199, 221, 1)
+	&:nth-child(10)
+		background-color: rgba(36, 98, 176, 1)
+	&:nth-child(11)
+		background-color: rgba(94, 197, 197, 1)
+	&:nth-child(12)
+		background-color: rgba(94, 175, 84, 1)
+	&:nth-child(13)
+		background-color: rgba(135, 218, 190, 1)
+	&:nth-child(14)
+		background-color: rgba(172, 173, 172, 1)
+	&:nth-child(15)
+		background-color: rgba(0, 0, 0, 1)
+	&:nth-child(16)
+		background-color: rgba(191, 174, 205, 1)
+	&:nth-child(17)
+		background-color: rgba(79, 16, 19, 1)
+	&:nth-child(18)
+		background-color: rgba(241, 160, 71, 1)
+
+
+.current-filter__item input[type="checkbox"]:checked, input[type="checkbox"]:not(:checked) 
+	position: absolute
+	left: -9999px
+.current-filter__item input[type="checkbox"]:checked + label,
+.current-filter__item input[type="checkbox"]:not(:checked) + label 
+	display: inline-block
+	position: relative
+	padding-left: 40px
+	line-height: 20px
+	cursor: pointer
+	color: rgba(0, 0, 0, 0)
+	font-size: 16px
+	font-family: "Roboto", sans-serif
+	font-style: normal
+	font-weight: 400
+	line-height: 22px
+
+
+.current-filter__item input[type="checkbox"]:checked + label::before,
+.current-filter__item input[type="checkbox"]:not(:checked) + label::before 
+	content: ''
+	position: absolute
+	top: 0
+	left: 0
+	width: 36px
+	height: 36px
+	border-radius: 50%
+	color: red
+
+.current-filter__item input[type="checkbox"]:checked + label::after,
+.current-filter__item input[type="checkbox"]:not(:checked) + label::after 
+	content: ''
+	position: absolute
+	transition: all ease 0.5s
+	left: 0px
+	top: 0px
+	width: 36px
+	height: 36px
+	border: 2px solid rgba(56, 190, 118, 1)
+	border-radius: 50%
+	color: red
+
+.current-filter__item input[type="checkbox"]:not(:checked) + label::after 
+	opacity: 0
+
+.current-filter__item input[type="checkbox"]:checked + label::after 
+	opacity: 1
+
+
+.voice-input__wrapper
+	margin-top: 14px
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: center
+
+.voicw-left, .voice-right
+	width: 49%
+	label
+		color: #A3A3A3
+		font-size: 14px
+		font-family: "Roboto", sans-serif
+		font-style: normal
+		font-weight: 400
+		line-height: 20px
+
+.voice-input__mini, .voice-input__max
+	border: 1px solid rgba(163, 163, 163, 1)
+	height: 36px
+	padding: 7px 12px
+	width: 100%
+	&::placeholder
+		color: #161314
+		font-size: 16px
+		font-family: "Roboto", sans-serif
+		font-style: normal
+		font-weight: 400
+		line-height: 22px
+	&:hover
+		border: 1px solid rgba(56, 190, 118, 1)
+	
+	
+.voice-input__mini
+	border-radius: 8px 0 0 8px
+.voice-input__max
+	border-radius: 0px 8px 8px 0px
+
+
+.sale-current__wrapper
+	margin-top: 15px
+	padding-bottom: 15px
+.sale-current__radiobuttom
+	margin-top: 12px
+	&:first-child
+		margin-top: 0
+
+
+.sale-current__radiobuttom input[type="radio"]:checked,
+.sale-current__radiobuttom input[type="radio"]:not(:checked)
+	position: absolute
+	left: -9999px
+
+.sale-current__radiobuttom input[type="radio"]:checked + label,
+.sale-current__radiobuttom input[type="radio"]:not(:checked) + label
+	display: inline-block
+	position: relative
+	padding-left: 36px
+	line-height: 20px
+	cursor: pointer
+	color: #161314
+	font-size: 16px
+	font-family: "Roboto", sans-serif
+	font-style: normal
+	font-weight: 400
+
+.sale-current__radiobuttom input[type="radio"]:checked + label:before,
+.sale-current__radiobuttom input[type="radio"]:not(:checked) + label:before
+	content: ""
+	position: absolute
+	left: 0px
+	top: 0px
+	width: 24px
+	height: 24px
+	border: 2px solid rgba(163, 163, 163, 1)
+	background-color: #ffffff
+
+.sale-current__radiobuttom input[type="radio"]:checked + label:before,
+.sale-current__radiobuttom input[type="radio"]:not(:checked) + label:before
+	border-radius: 100%
+
+.sale-current__radiobuttom input[type="radio"]:checked + label:after,
+.sale-current__radiobuttom input[type="radio"]:not(:checked) + label:after
+	content: ""
+	position: absolute
+	-webkit-transition: all 0.2s ease
+	-moz-transition: all 0.2s ease
+	-o-transition: all 0.2s ease
+	transition: all 0.2s ease
+
+.sale-current__radiobuttom input[type="radio"]:checked + label:after,
+.sale-current__radiobuttom input[type="radio"]:not(:checked) + label:after
+	left: 5px
+	top: 5px
+	width: 14px
+	height: 14px
+	border-radius: 100%
+	background-color: rgba(56, 190, 118, 1)
+	border: 2px solid rgba(56, 190, 118, 1)
+
+.sale-current__radiobuttom input[type="radio"]:not(:checked) + label:after
+	opacity: 0
+
+.sale-current__radiobuttom input[type="radio"]:checked + label:after
+	opacity: 1
+
+.sale-current__radiobuttom input[type="radio"]:checked + label:before
+	opacity: 1
+	border: 2px solid rgba(56, 190, 118, 1)

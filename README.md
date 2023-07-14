@@ -91,18 +91,6 @@ Or get from google-webfonts-helper: <a href="https://google-webfonts-helper.hero
 
 <h3>font-weight helper</h3>
 
-<ul>
-	<li><strong>100</strong> - Thin (Hairline)</li>
-	<li><strong>200</strong> - Extra Light (Ultra Light)</li>
-	<li><strong>300</strong> - Light</li>
-	<li><strong>400</strong> - Regular (Normal)</li>
-	<li><strong>500</strong> - Medium</li>
-	<li><strong>600</strong> - Semi Bold (Demi Bold)</li>
-	<li><strong>700</strong> - Bold</li>
-	<li><strong>800</strong> - Extra Bold (Ultra Bold)</li>
-	<li><strong>900</strong> - Black (Heavy)</li>
-</ul>
-
 <h2>Caching</h2>
 
 <p>Create or open <strong>.htaccess</strong> file in root folder of website (Apache). Place this code for resources caching:</p>
@@ -113,40 +101,3 @@ Or get from google-webfonts-helper: <a href="https://google-webfonts-helper.hero
 # Add correct content-type for fonts & SVG
 AddType application/font-woff2 .woff2
 AddType image/svg+xml .svg
-
-ExpiresActive On
-ExpiresDefault "access plus 5 seconds"
-
-# Cache Images
-ExpiresByType image/x-icon "access plus 2592000 seconds"
-ExpiresByType image/jpeg "access plus 2592000 seconds"
-ExpiresByType image/png "access plus 2592000 seconds"
-ExpiresByType image/gif "access plus 2592000 seconds"
-ExpiresByType image/svg+xml "access plus 2592000 seconds"
-
-# Cache Fonts
-ExpiresByType application/font-woff2 "access plus 2592000 seconds"
-ExpiresByType image/svg+xml "access plus 2592000 seconds"
-
-# Cache other content types (CSS, JS, HTML, XML)
-ExpiresByType text/css "access plus 604800 seconds"
-ExpiresByType text/javascript "access plus 2592000 seconds"
-ExpiresByType application/javascript "access plus 2592000 seconds"
-ExpiresByType application/x-javascript "access plus 2592000 seconds"
-ExpiresByType text/html "access plus 600 seconds"
-ExpiresByType application/xhtml+xml "access plus 600 seconds"
-
-&lt;/ifModule&gt;
-
-&lt;ifModule mod_deflate.c&gt;
-
-AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript application/font-woff2 image/svg+xml
-
-&lt;/ifModule&gt;
-</pre>
-
-<h2>Issues</h2>
-
-<ol>
-	<li>Long Preprocessor compile: Disable the "safe write" option in PHPStorm/WebStorm settings.</li>
-</ol>

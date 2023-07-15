@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <!-- <base href="/"> -->
+    <!-- <base href="/" /> -->
 
     <title>Шторы и жалюзи</title>
     <meta name="description" content="Startup HTML template OptimizedHTML 5" />
@@ -15,10 +16,1094 @@
     <link rel="icon" href="images/favicon.png" />
     <meta property="og:image" content="images/dist/preview.jpg" />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="css/app.min.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
   </head>
+	<div class="mobile-nav" id="top-start">
+  <ul class="mobile-nav_list">
+    <li clas="mobile-nav_item">
+      <a href="/" class="mobile-nav_link">
+        <img src="../images/src/mobile-nav/home.svg" alt="mobile-icon" />
+        <span>главная</span>
+      </a>
+    </li>
+    <li clas="mobile-nav_item">
+      <a href="../categories.html" class="mobile-nav_link">
+        <img src="../images/src/mobile-nav/menu.svg" alt="mobile-icon" />
+        <span>категории</span>
+      </a>
+    </li>
+    <li clas="mobile-nav_item">
+      <a href="#" class="mobile-nav_link">
+        <img src="../images/src/mobile-nav/cart.svg" alt="mobile-icon" />
+        <span>корзина</span>
+      </a>
+    </li>
+    <li clas="mobile-nav_item">
+      <a href="#" class="mobile-nav_link">
+        <img src="../images/src/mobile-nav/Union.svg" alt="mobile-icon" />
+        <span>профиль</span>
+      </a>
+    </li>
+  </ul>
+</div>
 
   <body>
-    <script src="js/app.min.js"></script>
-  </body>
+</html>
+
+<section class="header-section">
+  <div class="header-main-line">
+  <div class="header-menu-button">
+    <img src="../images/src/icons/menu.svg" alt="menu" class="image-menu" />
+    <span>Каталог</span>
+  </div>
+  <div class="header-logotip">
+    <a href="#" class="logotip">
+      <img src="../images/src/logo.svg" alt="logotip" class="image-logotip" />
+    </a>
+    <a href="#" class="logotip-mobile">
+      <img src="../images/src/logotip.png" alt="logotip" />
+    </a>
+  </div>
+  <div class="header-search">
+    <form action="#" class="form-search">
+      <input type="search" placeholder="Я ищу..." class="search-input" />
+      <button type="submit" class="search-button">
+        <div class="submit-button">
+          <img
+            src="../images/src/icons/search.svg"
+            alt="search"
+            class="image-search"
+          />
+        </div>
+      </button>
+    </form>
+  </div>
+  <div class="header-navbar">
+    <ul class="navbar-list">
+      <li class="navbar-item">
+        <a href="#" class="navbar-link">
+          <img
+            src="../images/src/icons/locationBig.svg"
+            alt="nav-location"
+            class="nav-image-location"
+          />
+          <span>Адрес</span>
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a href="#" class="navbar-link">
+          <img
+            src="../images/src/icons/box.svg"
+            alt="cube"
+            class="nav-image-box"
+          />
+          <span>Доставка</span>
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a href="#" class="navbar-link">
+          <img
+            src="../images/src/icons/user.svg"
+            alt="user"
+            class="nav-image-user"
+          />
+          <span>Профиль</span>
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a href="#" class="navbar-link">
+          <img
+            src="../images/src/icons/cart.svg"
+            alt="cart-user"
+            class="nav-image-cart"
+          />
+          <span>Корзина</span>
+          <span class="cart-action">12</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="header-main-line_call-location-btn">
+    <div class="location-btn-link">
+      <a href="tel:+74955427698" class="call-location">
+        <img src="../images/src/icons/call-head.svg" alt="call" />
+      </a>
+      <a
+        href="yandexmaps://maps.yandex.ru/?ll=55.648677,37.735575z=12&l=map"
+        class="call-location"
+      >
+        <img src="../images/src/icons/locationBig.svg" alt="location" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- window popup shoping profile -->
+<div class="popup-shoping-profile">
+  <ul class="profile-list">
+    <li class="profile-item">
+      <a href="#" class="profile-link">Покупки</a>
+    </li>
+    <li class="profile-item"></li>
+    <li class="profile-item">
+      <a href="#" class="profile-link">Личные данные</a>
+    </li>
+    <li class="profile-item">
+      <a href="#" class="profile-link">Выйти</a>
+    </li>
+  </ul>
+</div>
+<!-- window popup main catalog -->
+<div class="popup-main-catalog">
+  <div class="popup-catalog-wrapper">
+    <div class="search-categories">
+      <form action="#" class="form-search">
+        <input type="search" placeholder="Я ищу..." class="search-input" />
+        <button type="submit" class="search-button">
+          <div class="submit-button">
+            <img
+              src="../images/src/icons/search.svg"
+              alt="search"
+              class="image-search"
+            />
+          </div>
+        </button>
+      </form>
+    </div>
+    <div class="section-catalog-menu">
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <a href="#" class="catalog-link">
+            <div class="icon-text">
+              <img src="../images/src/icons/blinds.svg" alt="blinds" />
+              <span>Жалюзи</span>
+            </div>
+            <div class="arrow">
+              <img src="../images/src/icons/arrow.svg" alt="arrow" />
+            </div>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <a href="#" class="catalog-link">
+            <div class="icon-text">
+              <img src="../images/src/icons/roller-curtains.svg" alt="blinds" />
+              <span>Рулонные шторы</span>
+            </div>
+            <div class="arrow">
+              <img src="../images/src/icons/arrow.svg" alt="arrow" />
+            </div>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <a href="#" class="catalog-link">
+            <div class="icon-text">
+              <img src="../images/src/icons/plysse.svg" alt="blinds" />
+              <span>Плиссе</span>
+            </div>
+            <div class="arrow">
+              <img src="../images/src/icons/arrow.svg" alt="arrow" />
+            </div>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <a href="#" class="catalog-link">
+            <div class="icon-text">
+              <img src="../images/src/icons/curtain.svg" alt="blinds" />
+              <span>Шторы</span>
+            </div>
+            <div class="arrow">
+              <img src="../images/src/icons/arrow.svg" alt="arrow" />
+            </div>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <a href="#" class="catalog-link">
+            <div class="icon-text">
+              <img src="../images/src/icons/cornices.svg" alt="blinds" />
+              <span>Карнизы</span>
+            </div>
+            <div class="arrow">
+              <img src="../images/src/icons/arrow.svg" alt="arrow" />
+            </div>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <a href="#" class="catalog-link">
+            <div class="icon-text">
+              <img src="../images/src/icons/roles-shutters.svg" alt="blinds" />
+              <span>Рольставни</span>
+            </div>
+            <div class="arrow">
+              <img src="../images/src/icons/arrow.svg" alt="arrow" />
+            </div>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <a href="#" class="catalog-link">
+            <div class="icon-text">
+              <img src="../images/src/icons/gates.svg" alt="blinds" />
+              <span>Ворота</span>
+            </div>
+            <div class="arrow">
+              <img src="../images/src/icons/arrow.svg" alt="arrow" />
+            </div>
+          </a>
+        </li>
+        <li class="catalog-item">
+          <a href="#" class="catalog-link">
+            <div class="icon-text">
+              <img src="../images/src/icons/gardins.svg" alt="blinds" />
+              <span>Одежда стен</span>
+            </div>
+            <div class="arrow">
+              <img src="../images/src/icons/arrow.svg" alt="arrow" />
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="mobile-search">
+  <div class="mobile-search_section">
+    <form action="#" class="mobile-search_form">
+      <input type="search" placeholder="Я ищу..." class="mobile-search_input" />
+      <button type="submit" class="mobile-search_button">
+        <div class="mobile-search_submit-button">
+          <img
+            src="../images/src/icons/search.svg"
+            alt="search"
+            class="mobile-search_image-search"
+          />
+        </div>
+      </button>
+    </form>
+  </div>
+</div>
+
+</section>
+
+<section class="home">
+  <section class="main-slider_wrapper-block">
+  <div
+    class="main-slider_carousel-block"
+    style="background-image: url('../images/src/slider/imgbg.png')"
+  >
+    <div class="main-slider_item-block">
+      <div class="item-block_content">
+        <h2 class="item-block_content-title">Качественные материалы</h2>
+        <div class="item-block_content-text">
+          <p>
+            Сотрудничаем только с признанными лидерами рынка в сфере создания
+            тканей и комплектующих. Качество продукции контролируется на всех
+            этапах производства.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="main-slider_item-block">
+      <div class="item-block_content">
+        <h2 class="item-block_content-title">Качественные материалы 2</h2>
+        <div class="item-block_content-text">
+          <p>
+            Сотрудничаем только с признанными лидерами рынка в сфере создания
+            тканей и комплектующих. Качество продукции контролируется на всех
+            этапах производства.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="main-slider_item-block">
+      <div class="item-block_content">
+        <h2 class="item-block_content-title">Качественные материалы 3</h2>
+        <div class="item-block_content-text">
+          <p>
+            Сотрудничаем только с признанными лидерами рынка в сфере создания
+            тканей и комплектующих. Качество продукции контролируется на всех
+            этапах производства.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="promo-baner">
+  <div class="promo-baner_wrapper">
+    <div class="promo-baner_item">
+      <a href="#" class="promo-baner-link_descount">
+        <img
+          src="../images/src/banners/banner-1.png"
+          alt="image-1"
+          class="banners-image"
+        />
+        <div class="promo-baner_text">
+          <div class="promo-baner_descounts descount">
+            <p>скидки</p>
+            <span>до</span>
+            <p>20%</p>
+          </div>
+          <div class="promo-baner_sligan-name descount">
+            <p>Рулонные шторы</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="promo-baner_item">
+      <a href="#" class="promo-baner-link_descount">
+        <img
+          src="../images/src/banners/banner-2.png"
+          alt="image-1"
+          class="banners-image"
+        />
+        <div class="promo-baner_text">
+          <div class="promo-baner_descounts">
+            <p>скидки</p>
+            <span>до</span>
+            <p>20%</p>
+          </div>
+          <div class="promo-baner_sligan-name">
+            <p>Унивирсальные жалюзи-плиссе</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="promo-baner_item">
+      <a href="#" class="promo-baner-link_descount">
+        <img
+          src="../images/src/banners/banner-3.png"
+          alt="image-1"
+          class="banners-image"
+        />
+        <div class="promo-baner_text">
+          <div class="promo-baner_descounts descount">
+            <p>скидки</p>
+            <span>до</span>
+            <p>20%</p>
+          </div>
+          <div class="promo-baner_sligan-name descount">
+            <p>Рулонные шторы</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="promo-baner_item">
+      <a href="#" class="promo-baner-link_descount">
+        <img
+          src="../images/src/banners/banner-4.png"
+          alt="image-1"
+          class="banners-image"
+        />
+        <div class="promo-baner_text">
+          <div class="promo-baner_descounts">
+            <p>скидки</p>
+            <span>до</span>
+            <p>20%</p>
+          </div>
+          <div class="promo-baner_sligan-name">
+            <p>Подготовка проема для рольставен</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="promo-baner_item">
+      <a href="#" class="promo-baner-link_descount">
+        <img
+          src="../images/src/banners/banner-5.png"
+          alt="image-1"
+          class="banners-image"
+        />
+        <div class="promo-baner_text">
+          <div class="promo-baner_descounts">
+            <p>скидки</p>
+            <span>до</span>
+            <p>20%</p>
+          </div>
+          <div class="promo-baner_sligan-name">
+            <p>Как оформить балкон шторами?</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="promo-baner_item">
+      <a href="#" class="promo-baner-link_descount">
+        <img
+          src="../images/src/banners/banner-8.png"
+          alt="image-1"
+          class="banners-image"
+        />
+        <div class="promo-baner_text">
+          <div class="promo-baner_descounts">
+            <p>скидки</p>
+            <span>до</span>
+            <p>20%</p>
+          </div>
+          <div class="promo-baner_sligan-name descount">
+            <p>карнизы в детскую</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="promo-baner_item">
+      <a href="#" class="promo-baner-link_descount">
+        <img
+          src="../images/src/banners/banner-7.png"
+          alt="image-1"
+          class="banners-image"
+        />
+        <div class="promo-baner_text">
+          <div class="promo-baner_descounts">
+            <p>скидки</p>
+            <span>до</span>
+            <p>20%</p>
+          </div>
+          <div class="promo-baner_sligan-name">
+            <p>Жалюзи для интерьера в эко-стиле</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="promo-baner_item">
+      <a href="#" class="promo-baner-link_descount">
+        <img
+          src="../images/src/banners/banner-6.png"
+          alt="image-1"
+          class="banners-image"
+        />
+        <div class="promo-baner_text">
+          <div class="promo-baner_descounts">
+            <p>скидки</p>
+            <span>до</span>
+            <p>20%</p>
+          </div>
+          <div class="promo-baner_sligan-name">
+            <p>портьеры на люверсах</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+  <section class="you-like-it">
+  <div class="you-like-it_title-text">
+    <p>Возможно, вам понравится</p>
+  </div>
+  <div class="product-card_wrapper">
+    <div class="product-card_item">
+      <a href="#" class="product-card_box">
+        <div class="product-card_image">
+          <img src="../images/src/windows/window-1.png" alt="image-1" />
+          <span>-37%</span>
+        </div>
+        <div class="product-card_price-text">
+          <div class="product-card_price">
+            <div class="actual-price">
+              <span>1 520</span>
+              <img src="../images/src/icons/ruble.svg" alt="ruble" />
+            </div>
+            <div class="not-descount-price">
+              <span>2082</span>
+              <img src="../images/src/icons/ruble-gray.svg" alt="ruble" />
+            </div>
+          </div>
+          <div class="product-card_text">
+            <span>Рулонные жалюзи МИНИ...</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="product-card_item">
+      <a href="#" class="product-card_box">
+        <div class="product-card_image">
+          <img src="../images/src/windows/window-2.png" alt="image-1" />
+          <span>-37%</span>
+        </div>
+        <div class="product-card_price-text">
+          <div class="product-card_price">
+            <div class="actual-price">
+              <span>1 520</span>
+              <img src="../images/src/icons/ruble.svg" alt="ruble" />
+            </div>
+            <div class="not-descount-price">
+              <span>2082</span>
+              <img src="../images/src/icons/ruble-gray.svg" alt="ruble" />
+            </div>
+          </div>
+          <div class="product-card_text">
+            <span>Рулонные жалюзи МИНИ...</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="product-card_item">
+      <a href="#" class="product-card_box">
+        <div class="product-card_image">
+          <img src="../images/src/windows/window-3.png" alt="image-1" />
+          <span>-37%</span>
+        </div>
+        <div class="product-card_price-text">
+          <div class="product-card_price">
+            <div class="actual-price">
+              <span>1 520</span>
+              <img src="../images/src/icons/ruble.svg" alt="ruble" />
+            </div>
+            <div class="not-descount-price">
+              <span>2082</span>
+              <img src="../images/src/icons/ruble-gray.svg" alt="ruble" />
+            </div>
+          </div>
+          <div class="product-card_text">
+            <span>Рулонные жалюзи МИНИ...</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="product-card_item">
+      <a href="#" class="product-card_box">
+        <div class="product-card_image">
+          <img src="../images/src/windows/window-4.png" alt="image-1" />
+          <span>-37%</span>
+        </div>
+        <div class="product-card_price-text">
+          <div class="product-card_price">
+            <div class="actual-price">
+              <span>1 520</span>
+              <img src="../images/src/icons/ruble.svg" alt="ruble" />
+            </div>
+            <div class="not-descount-price">
+              <span>2082</span>
+              <img src="../images/src/icons/ruble-gray.svg" alt="ruble" />
+            </div>
+          </div>
+          <div class="product-card_text">
+            <span>Рулонные жалюзи МИНИ...</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="product-card_item">
+      <a href="#" class="product-card_box">
+        <div class="product-card_image">
+          <img src="../images/src/windows/window-5.png" alt="image-1" />
+          <span>-37%</span>
+        </div>
+        <div class="product-card_price-text">
+          <div class="product-card_price">
+            <div class="actual-price">
+              <span>1 520</span>
+              <img src="../images/src/icons/ruble.svg" alt="ruble" />
+            </div>
+            <div class="not-descount-price">
+              <span>2082</span>
+              <img src="../images/src/icons/ruble-gray.svg" alt="ruble" />
+            </div>
+          </div>
+          <div class="product-card_text">
+            <span>Рулонные жалюзи МИНИ...</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="product-card_item">
+      <a href="#" class="product-card_box">
+        <div class="product-card_image">
+          <img src="../images/src/windows/window-6.png" alt="image-1" />
+          <span>-37%</span>
+        </div>
+        <div class="product-card_price-text">
+          <div class="product-card_price">
+            <div class="actual-price">
+              <span>1 520</span>
+              <img src="../images/src/icons/ruble.svg" alt="ruble" />
+            </div>
+            <div class="not-descount-price">
+              <span>2082</span>
+              <img src="../images/src/icons/ruble-gray.svg" alt="ruble" />
+            </div>
+          </div>
+          <div class="product-card_text">
+            <span>Рулонные жалюзи МИНИ...</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="product-card_item">
+      <a href="#" class="product-card_box">
+        <div class="product-card_image">
+          <img src="../images/src/windows/window-7.png" alt="image-1" />
+          <span>-37%</span>
+        </div>
+        <div class="product-card_price-text">
+          <div class="product-card_price">
+            <div class="actual-price">
+              <span>1 520</span>
+              <img src="../images/src/icons/ruble.svg" alt="ruble" />
+            </div>
+            <div class="not-descount-price">
+              <span>2082</span>
+              <img src="../images/src/icons/ruble-gray.svg" alt="ruble" />
+            </div>
+          </div>
+          <div class="product-card_text">
+            <span>Рулонные жалюзи МИНИ...</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="product-card_item">
+      <a href="#" class="product-card_box">
+        <div class="product-card_image">
+          <img src="../images/src/windows/window-8.png" alt="image-1" />
+          <span>-37%</span>
+        </div>
+        <div class="product-card_price-text">
+          <div class="product-card_price">
+            <div class="actual-price">
+              <span>1 520</span>
+              <img src="../images/src/icons/ruble.svg" alt="ruble" />
+            </div>
+            <div class="not-descount-price">
+              <span>2082</span>
+              <img src="../images/src/icons/ruble-gray.svg" alt="ruble" />
+            </div>
+          </div>
+          <div class="product-card_text">
+            <span>Рулонные жалюзи МИНИ...</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="product-card_item">
+      <a href="#" class="product-card_box">
+        <div class="product-card_image">
+          <img src="../images/src/windows/window-9.png" alt="image-1" />
+          <span>-37%</span>
+        </div>
+        <div class="product-card_price-text">
+          <div class="product-card_price">
+            <div class="actual-price">
+              <span>1 520</span>
+              <img src="../images/src/icons/ruble.svg" alt="ruble" />
+            </div>
+            <div class="not-descount-price">
+              <span>2082</span>
+              <img src="../images/src/icons/ruble-gray.svg" alt="ruble" />
+            </div>
+          </div>
+          <div class="product-card_text">
+            <span>Рулонные жалюзи МИНИ...</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="product-card_item">
+      <a href="#" class="product-card_box">
+        <div class="product-card_image">
+          <img src="../images/src/windows/window-10.png" alt="image-1" />
+          <span>-37%</span>
+        </div>
+        <div class="product-card_price-text">
+          <div class="product-card_price">
+            <div class="actual-price">
+              <span>1 520</span>
+              <img src="../images/src/icons/ruble.svg" alt="ruble" />
+            </div>
+            <div class="not-descount-price">
+              <span>2082</span>
+              <img src="../images/src/icons/ruble-gray.svg" alt="ruble" />
+            </div>
+          </div>
+          <div class="product-card_text">
+            <span>Рулонные жалюзи МИНИ...</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="product-card_item">
+      <a href="#" class="product-card_box">
+        <div class="product-card_image">
+          <img src="../images/src/windows/window-11.png" alt="image-1" />
+          <span>-37%</span>
+        </div>
+        <div class="product-card_price-text">
+          <div class="product-card_price">
+            <div class="actual-price">
+              <span>1 520</span>
+              <img src="../images/src/icons/ruble.svg" alt="ruble" />
+            </div>
+            <div class="not-descount-price">
+              <span>2082</span>
+              <img src="../images/src/icons/ruble-gray.svg" alt="ruble" />
+            </div>
+          </div>
+          <div class="product-card_text">
+            <span>Рулонные жалюзи МИНИ...</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="product-card_item">
+      <a href="#" class="product-card_box">
+        <div class="product-card_image">
+          <img src="../images/src/windows/window-12.png" alt="image-1" />
+          <span>-37%</span>
+        </div>
+        <div class="product-card_price-text">
+          <div class="product-card_price">
+            <div class="actual-price">
+              <span>1 520</span>
+              <img src="../images/src/icons/ruble.svg" alt="ruble" />
+            </div>
+            <div class="not-descount-price">
+              <span>2082</span>
+              <img src="../images/src/icons/ruble-gray.svg" alt="ruble" />
+            </div>
+          </div>
+          <div class="product-card_text">
+            <span>Рулонные жалюзи МИНИ...</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="see-more">
+    <div class="see-more_details">
+      <span>Показать ещё</span>
+      <img src="../images/src/icons/arrow-down.svg" alt="" srcset="" />
+    </div>
+  </div>
+</section>
+
+  <section class="banners-details">
+  <div
+    class="banners-details_item"
+    style="background-image: url('../images/src/baners-details/banner-1.png')"
+  >
+    <div class="banners-details_content">
+      <div class="banner-details_content-text-btns">
+        <div class="details_title">
+          <h2>Бесплатный замер и доставка</h2>
+        </div>
+        <div class="details_text">
+          <p>
+            Приедем на замер и доставим ваш заказ в надежной упаковке по Москве
+            и области
+          </p>
+        </div>
+        <div class="details_btns">
+          <a href="#" class="order-froze">Заказать замер</a>
+          <a href="#" class="read-more"
+            >Подробнее
+            <img
+              src="../images/src/baners-details/arrow-more.svg"
+              alt="arrow"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="banners-details_item"
+    style="background-image: url('../images/src/baners-details/banner-2.png')"
+  >
+    <div class="banners-details_content">
+      <div class="banner-details_content-text-btns">
+        <div class="details_title">
+          <h2>Как произвести замер и установку самому</h2>
+        </div>
+        <div class="details_text">
+          <p>
+            Посмотрите подробные инструкции по замеру или установке жалюзи и
+            штор
+          </p>
+        </div>
+        <div class="details_btns">
+          <a href="#" class="instruction-froze"
+            >Инструкции по замеру и установке</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="trustus">
+  <div class="trustus_title">
+    <h2>Нам доверяют</h2>
+  </div>
+  <div class="trustus_list">
+    <div class="trustus_item">
+      <a href="#">
+        <img src="../images/src/logotips/logo1.png" alt="logotip" />
+      </a>
+    </div>
+    <div class="trustus_item">
+      <a href="#"
+        ><img src="../images/src/logotips/logo2.png" alt="logotips" />
+      </a>
+    </div>
+    <div class="trustus_item">
+      <a href="#"
+        ><img src="../images/src/logotips/logo3.png" alt="logotips" />
+      </a>
+    </div>
+    <div class="trustus_item">
+      <a href="#">
+        <img src="../images/src/logotips/logo4.png" alt="logotips" />
+      </a>
+    </div>
+    <div class="trustus_item">
+      <a href="#">
+        <img src="../images/src/logotips/logo5.png" alt="logotips" />
+      </a>
+    </div>
+    <div class="trustus_item">
+      <a href="#"
+        ><img src="../images/src/logotips/logo6.png" alt="logotips"
+      /></a>
+    </div>
+    <div class="trustus_item">
+      <a href="#"
+        ><img src="../images/src/logotips/logo7.png" alt="logotips"
+      /></a>
+    </div>
+    <div class="trustus_item">
+      <a href="#"
+        ><img src="../images/src/logotips/logo8.png" alt="logotips"
+      /></a>
+    </div>
+    <div class="trustus_item">
+      <a href="#"
+        ><img src="../images/src/logotips/logo9.png" alt="logotips"
+      /></a>
+    </div>
+    <div class="trustus_item">
+      <a href="#"
+        ><img src="../images/src/logotips/logo10.png" alt="logotips"
+      /></a>
+    </div>
+    <div class="trustus_item">
+      <a href="#"
+        ><img src="../images/src/logotips/logo11.png" alt="logotips"
+      /></a>
+    </div>
+    <div class="trustus_item">
+      <a href="#"
+        ><img src="../images/src/logotips/logo12.png" alt="logotips"
+      /></a>
+    </div>
+    <div class="trustus_item">
+      <a href="#"
+        ><img src="../images/src/logotips/logo13.png" alt="logotips"
+      /></a>
+    </div>
+    <div class="trustus_item">
+      <a href="#"
+        ><img src="../images/src/logotips/logo14.png" alt="logotips"
+      /></a>
+    </div>
+    <div class="trustus_item">
+      <a href="#"
+        ><img src="../images/src/logotips/logo15.png" alt="logotips"
+      /></a>
+    </div>
+    <div class="trustus_item">
+      <a href="#"
+        ><img src="../images/src/logotips/logo16.png" alt="logotips"
+      /></a>
+    </div>
+    <div class="trustus_item">
+      <a href="#"
+        ><img src="../images/src/logotips/logo17.png" alt="logotips"
+      /></a>
+    </div>
+    <div class="trustus_item">
+      <a href="#"
+        ><img src="../images/src/logotips/logo18.png" alt="logotips"
+      /></a>
+    </div>
+    <div class="trustus_item">
+      <a href="#"
+        ><img src="../images/src/logotips/logo19.png" alt="logotips"
+      /></a>
+    </div>
+    <div class="trustus_item">
+      <a href="#"
+        ><img src="../images/src/logotips/logo20.png" alt="logotips"
+      /></a>
+    </div>
+    <div class="trustus_item">
+      <a href="#"
+        ><img src="../images/src/logotips/logo21.png" alt="logotips"
+      /></a>
+    </div>
+  </div>
+</section>
+
+  <section class="oremanufacture">
+  <div class="oremanufacture_main-title">
+    <h2>Мастерская по производству жалюзи и пошиву штор</h2>
+  </div>
+  <div class="oremanufacture_content">
+    <p>
+      Сити Жалюзи – это мастерская Татьяны Русановой. Мы помогаем украсить и
+      защитить окна. Для этого делаем жалюзи, шьем шторы, подбираем карнизы,
+      устанавливаем рольставни. Наш конек – одежда сцены. Умеем согласовать
+      проект с руководителем. Чтобы не переделывать, предпочитаем делать под
+      ключ: замерить, доставить и установить. К нам обращаются, когда нужна
+      защита от солнца, света, жары, любопытных прохожих. Мы делаем так, чтобы
+      люди не тратили нервы в салонах штор, не носились по магазинам с кусками
+      обоев, не ошибались в замерах, не стояли в очередях и пробках, забирая
+      заказ, не мучились с установкой.
+    </p>
+  </div>
+  <div class="oremanufacture_link">
+    <a href="#">Читать далее</a>
+  </div>
+</section>
+
+</section>
+
+
+	<section class="footer-inform-line">
+  <div class="inform-white-block"></div>
+  <div class="inform-navbar-block">
+    <div class="inform-navbar-list">
+      <div class="footer-information-main-title">
+        <h2>Покупателям</h2>
+        <img
+          src="../images/src/icons/arrow-up.svg"
+          class="footer-information-arrow"
+          alt="arrow"
+        />
+      </div>
+      <div class="footer-information-list">
+        <ul>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Способы оплаты</a></li>
+          <li><a href="#">Возврат товара</a></li>
+          <li><a href="#">Гарантии</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Вопросы и ответы</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="inform-navbar-list">
+      <div class="footer-information-main-title">
+        <h2>Полезное</h2>
+        <img
+          src="../images/src/icons/arrow-up.svg"
+          class="footer-information-arrow"
+          alt="arrow"
+        />
+      </div>
+      <div class="footer-information-list">
+        <ul>
+          <li><a href="#">Инструкции</a></li>
+          <li><a href="#">Статьи</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="inform-navbar-list">
+      <div class="footer-information-main-title">
+        <h2>Компания</h2>
+        <img
+          src="../images/src/icons/arrow-up.svg"
+          class="footer-information-arrow"
+          alt="arrow"
+        />
+      </div>
+      <div class="footer-information-list">
+        <ul>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Реквизиты</a></li>
+          <li><a href="#">Документы</a></li>
+          <li><a href="#">Вакансии</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="inform-navbar-list">
+      <div class="footer-information-main-title">
+        <h2>Мы в соцсетях</h2>
+        <img
+          src="../images/src/icons/arrow-up.svg"
+          class="footer-information-arrow"
+          alt="arrow"
+        />
+      </div>
+      <div class="footer-information-list">
+        <ul>
+          <li><a href="#">Вконтакте</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Одноклассники</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="inform-navbar-list">
+      <div class="footer-information-main-title">
+        <h2>Контакты</h2>
+        <img
+          src="../images/src/icons/arrow-up.svg"
+          class="footer-information-arrow"
+          alt="arrow"
+        />
+      </div>
+      <div class="footer-information-list">
+        <div class="footer-nuber-soc">
+          <ul>
+            <li><a href="#" class="oure-number">+7 (495) 542-76-98</a></li>
+            <li><a href="#" class="oure-mail">info@city-jaluzi.ru</a></li>
+          </ul>
+          <div class="soc-group">
+            <span>
+              <a href="#">
+                <img src="../images/src/icons/call-neg.svg" alt="call" />
+              </a>
+            </span>
+            <span>
+              <a href="#">
+                <img
+                  src="../images/src/icons/telegramm-neg.svg"
+                  alt="telegram"
+                />
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="footer-fool-adres">
+          <p>109369, Москва Новочеркасский б-р, дом 41, корпус 3</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="information-copyright-block">
+    <p class="desctop-copyright">
+      2022 © Сити Жалюзи — производим жалюзи, собираем карнизы, шьем шторы. Все
+      права защищены.
+    </p>
+    <p class="mobile-copyright">© Сити Жалюзи</p>
+  </div>
+</section>
+
+	<scrip src="js/app.min.js"></script>
+	<script src="../js/scripts.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
 </html>
